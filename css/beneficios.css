@@ -1,0 +1,108 @@
+#beneficios{
+    background-image: url('../img/servicios.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    line-height: 2;
+}
+
+.beneficios h3{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 25px;
+}
+.beneficios h3:nth-child(6){
+    filter: drop-shadow(0 0 3px rgb(255, 213, 213)) drop-shadow(0 0 3px rgb(255, 185, 185)) drop-shadow(0 0 3px #fff) drop-shadow(0 0 0 #fff) drop-shadow(0 0 0 #fff);
+}
+
+.beneficios h4{
+    text-decoration: underline;
+}
+
+.beneficios b{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.beneficios1, .beneficios2, .beneficios3, .beneficios4, .beneficios5, .beneficios6, .beneficios7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.beneficios3, .beneficios4, .beneficios5{
+    width: 100vw;
+    border-bottom: 1px solid #333;
+}
+
+.beneficios4 h3, .beneficios5 h3{
+    color: #990000;
+}
+
+
+.beneficios1 h3{
+    color: #990000;
+}
+
+.beneficios2 h3{
+    color: #990000;
+}
+
+.beneficios3{
+    border-top: 1px solid #333;
+    color: rgb(202, 3, 3);
+    filter: drop-shadow(0 0 0 #000) drop-shadow(0 0 0 #000);
+}
+
+.beneficios5 b:nth-child(4){
+    text-decoration: underline;
+}
+
+.beneficios6 b {
+    text-decoration: underline;
+    color: #911;
+}
+
+.beneficios6 h3 {
+    text-decoration: underline;
+    color: #911;
+}
+
+.beneficios7{
+    width: 100%;
+    border-top: 1px solid #333;
+    color: rgb(0, 0, 0);
+}
+
+.subrayarMarcar{
+    text-decoration: underline;
+    color: #911;
+}
+
+.marcar{
+    font-weight: bolder;
+    filter: drop-shadow(0 0 0 #000) drop-shadow(0 0 0 #000);
+}
+
+.resaltar{
+    border:red solid 3px; 
+    margin: 3px; 
+    padding: 3px;
+}
+
+#ListaMed{
+    text-decoration: none;
+    width:100%;
+}

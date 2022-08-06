@@ -1,0 +1,104 @@
+.flex-container{
+	display: flex;
+	align-items: center; /*de esta forma ya tenemos todo centrado verticalmente*/
+	flex-wrap: wrap; /*esto lo hacemos para que cuando lo hagamos responsive se pueda deslizar*/
+	justify-content: center;
+	background: radial-gradient(circle, rgba(255, 255, 255, 0.192) 0%, rgba(157, 157, 157, 0.452) 100%);
+	margin: 50px auto;
+    padding: 20px;
+    border: 2px groove #555;
+    border-radius: 60px;
+	flex-grow: 1;
+	max-width: 1200px;
+}
+
+.form{
+	min-width: 340px;
+	flex: 1;
+	text-align: center;
+	padding: 30px;
+	order: 2;/*este es mas chico que el de la imagen para que de esta manera nos quede la imagen a la izquierda y el formulario a la derecha*/
+	
+}
+
+.form__input{
+	width: 60%;
+	padding: 7px;
+	margin: 6px 0;
+	border: none; /*esto es lo que se recomienda ya que forma parte de un diseño mas actual*/
+	background: transparent;
+    color: #000;
+    border-bottom: 1px solid #911;
+    transition: border-bottom ease 0.5s;
+    
+	
+}
+
+
+/*una tecnica que nos puede servir para los input, es un background-color con un linear gradient entre los parentesis se coloca desde donde comienza o hacia donde apunta el gradiente y seguido con que comienza y finalmente con que termina*/
+.form__input:focus{
+	background: linear-gradient(to bottom, transparent, rgba(255, 164, 164, 0.726));/*esto lo usamos para darle un fondito mas oscuro para cuando nos posicionamos sobre el casillero, asi de esta manera lo podemos visualizar*/
+	outline: none;
+	border-bottom: 3px solid #999;
+}
+
+.form textarea{
+	min-height: 140px;
+	resize: none; /*le sacamos la posibilidad de que se pueda redimencionar*/
+}
+
+
+
+.form-img{
+	flex: 1;
+	display: flex;
+	padding: 10px;
+	min-width: 300px;
+    max-width: 400px;
+    filter: drop-shadow(-5px 1px 1px #555) drop-shadow(-5px 1px 1px #555) drop-shadow(-5px 1px 1px #555);
+	order: 1;
+}
+
+.form-img div{
+	padding: 10px;
+	
+}
+
+
+.img-container{
+	margin: auto;
+	
+}
+
+.img-container div{
+	border-radius: 50%;
+	text-align: center;
+	padding: 0;
+}
+
+.form-img img{
+	width: 100%;/*esto lo hacemos asi por que con un flex y un margin auto centramos la imagen*/
+	max-width: 350px;
+}
+
+/*hacemos una seleccion por atributo, no es necesario pero para recordar conceptos*/
+
+.form input[type="submit"]{
+	background-color: rgba(104, 104, 104, 0.829);
+	border-bottom: none;
+    padding: 12px;
+    border-radius: 10px;
+    filter: drop-shadow(-2px 1px 1px #555) drop-shadow(-2px 1px 1px #555) drop-shadow(-2px 1px 1px #555);
+    color: #fff;
+}
+
+.form input[type="submit"]:hover{
+	background-color: rgb(40, 64, 92);
+	border-bottom: none;
+	padding: 12px;
+}
+
+.form input[type="submit"]:focus{
+    background-color: #000;
+    color: #fff;
+}

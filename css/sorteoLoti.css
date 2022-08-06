@@ -1,0 +1,224 @@
+#sorteoLoti{
+    width: 100vw;
+    height: 100%;
+}
+
+.botonesSorteo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonesSorteo .btnSorteo{
+    width: 35%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background-color: #777;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.botonesSorteo .btnSorteo:hover{
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 1px #000);
+    color: #000;
+    background-color: rgb(228, 228, 228);
+}
+
+.sorteos{
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.719);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    z-index: 1000;
+}
+
+.sorteos .descripcion{
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 30vh;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.76);
+    padding: 0;
+}
+
+.sorteos .descripcion ul {
+    padding: 0;
+    list-style: none;
+}
+
+.sorteos .descripcion ul li{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.sorteos .descripcion ul li b{
+    color: rgb(51, 255, 0);
+    filter: drop-shadow(0px 0px 1px #fff);
+}
+
+.sorteos .descripcion h2{
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.sorteos .descripcion .salir{
+    text-decoration: underline;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(251, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+}
+
+.sorteos .descripcion .salir:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+
+}
+
+.unvisible{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.visible{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 2100px){
+    .sorteos .descripcion{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .sorteos .descripcion ul li{
+        margin: 0;
+        font-size: 30px;
+    }
+    
+    .sorteos .descripcion h2{
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+    }
+
+    .sorteos .descripcion .salir{
+        margin: 0;
+        padding: 0;
+        margin-top: 0;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1200px){
+
+    .botonesSorteo .btnSorteo{
+        width: 40%;
+    }
+    .sorteos .descripcion{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .sorteos .descripcion ul li{
+        margin: 0;
+        font-size: 30px;
+    }
+    
+    .sorteos .descripcion h2{
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+    }
+
+    .sorteos .descripcion .salir{
+        margin: 0;
+        padding: 0;
+        margin-top: 0;
+        font-size: 30px;
+    }
+    
+}
+
+@media (max-width: 800px){
+    
+    .botonesSorteo .btnSorteo{
+        width: 40%;
+    }
+    .sorteos .descripcion h2{
+        font-size: 35px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .sorteos .descripcion ul{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .sorteos .descripcion ul li{
+        padding: 0;
+        font-size: 30px;
+    }
+    
+    .sorteos .descripcion h2{
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+    }
+    
+    .sorteos .descripcion .salir{
+        margin: 0;
+        padding: 0;
+        margin-top: 0;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px){
+  
+    .botonesSorteo .btnSorteo{
+        width: 40%;
+    }
+
+    .sorteos .descripcion h2{
+        font-size: 35px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .sorteos .descripcion ul{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .sorteos .descripcion ul li{
+        padding: 0;
+        font-size: 30px;
+    }
+    
+    .sorteos .descripcion h2{
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+    }
+    
+    .sorteos .descripcion .salir{
+        margin-top: 0;
+        font-size: 30px;
+    }
+}

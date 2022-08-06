@@ -1,0 +1,113 @@
+#planes{
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+.seccion_planes{
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.plan1{
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 320px;
+
+    margin: 50px;
+
+}
+
+
+
+.plan1 img{
+
+    width: 300px;
+
+}
+
+
+
+.plan2{
+
+    margin: 50px;
+
+    width: 320px;
+
+}
+
+
+
+.plan2 img{
+
+    width: 290px;
+
+}
+
+
+
+.seguro{
+
+    margin: 25px;
+
+}
+
+
+
+.seguro b{
+
+    color: #911;
+
+}
+
+
+
+.btn1{
+
+    padding: 3px 10px;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    border: 1px solid #000;
+
+    border-radius: 30px;
+
+    background-color: #888;
+
+    font-size: 17px;
+
+    text-align: center;
+
+}
+
+
+
+.btn1:focus{
+
+    background-color: #222;
+
+}

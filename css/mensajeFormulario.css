@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #777;
+}
+
+
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+
+    display:none;
+
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #000;
+    margin: 50px;
+}
+
+.mensaje img{
+    width: 120px;
+    height: 120px;
+    filter: drop-shadow(2px 2px 2px #000);
+    margin: 20px;
+}
+
+.mensaje p{
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.mensaje p:last-child{
+    text-decoration: underline;
+}
+
+.mensaje a{
+    font-size: 30px;
+}

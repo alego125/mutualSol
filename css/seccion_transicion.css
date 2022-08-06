@@ -1,0 +1,21 @@
+.contenedor_transicion{
+    position: relative;
+}
+.seccion_transicion{
+    height: 100vh;
+    background-image: url('../img/seccion1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.seccion_transicion2{
+    height: 100vh;
+    background-image: url('../img/seccion2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

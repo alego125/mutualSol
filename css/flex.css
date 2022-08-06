@@ -1,0 +1,829 @@
+*{
+
+    box-sizing: border-box;
+
+    font-family: 'Cinzel', serif;
+
+}
+
+
+
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+
+    display:none;
+
+}
+
+
+
+body{
+
+    margin: 0;
+
+    padding: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    width: 100vw;
+
+}
+
+
+
+main{
+
+    width: 100vw;
+
+}
+
+
+
+/*EFECTO SKEW*/
+
+.sesgo_arriba{
+
+    border-width: 0 0 35vh 100vw;
+
+    border-style: solid;
+
+    border-color:  transparent transparent #fff transparent;
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+}
+
+
+
+.sesgo_abajo{
+
+    border-width: 35vh 100vw 0 0;
+
+    border-style: solid;
+
+    border-color: #fff transparent transparent transparent;
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+
+
+}
+
+
+
+.sesgo_arriba-invertido{
+
+    border-width: 35vh 0 0 100vw;
+
+    border-style: solid;
+
+    border-color:  #fff transparent transparent  transparent;
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+}
+
+
+
+.sesgo_abajo-invertido{
+
+    border-width:  0 100vw 35vh  0;
+
+    border-style: solid;
+
+    border-color:  transparent transparent #fff transparent ;
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+
+
+}
+
+
+
+/*HEADER CABEZA DE PAGINA*/
+
+
+
+header{
+
+    position: fixed;
+
+    width: 100%;
+
+    z-index: 250;
+
+}
+
+
+
+.link{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    height: 15%;
+
+}
+
+
+
+.link img{
+
+    margin: 10px;
+
+    width: 100px;
+
+    filter: drop-shadow(-2px 2px 2px #000) drop-shadow(-2px 2px 2px #000);
+
+    border-radius: 50%;
+
+
+
+}
+
+
+
+.link ul{
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    list-style: none;
+
+    margin: 10px;
+
+    margin-right: 50px;
+
+}
+
+
+
+.link ul li{
+
+    margin: 20px;
+
+    width: 80px;
+
+}
+
+
+
+.link ul li a{
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 110%;
+
+    color: #fff;
+
+    filter: drop-shadow( 0px 0px 2px #000) drop-shadow(0px 0px 2px #000) drop-shadow(0px 0px 2px #000);
+
+    transition: text-decoration .8s;
+
+}
+
+
+
+.link ul li a:hover{
+
+    text-decoration: underline #911;
+    cursor: pointer;
+
+}
+
+
+.menu{
+
+    display: none;
+
+}
+
+
+
+
+
+/*PESENTACION DE LA EMPRESA*/
+
+.banner-presentacion{
+
+    display: flex;
+
+    position: relative;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-image: url('../img/banner.jpg');
+
+    background-attachment: fixed;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    height: 100vh;
+
+}
+
+
+
+.banner{
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: rgba(77, 77, 77, 0.4);
+
+    font-size: 100%;
+
+    width: 60%;
+
+    height: 45%;
+
+    color: #fff;
+
+    text-align: center;
+
+}
+
+
+
+.banner h2, .banner h1{
+
+    font-size: 150%;
+
+    margin: 5px 0;
+
+}
+
+
+
+.banner h1{
+
+    margin-top: 25px;
+
+}
+
+
+
+.banner h2{
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.banner hr{
+
+    width: 100%;
+
+    background-color: #911;
+
+}
+
+
+
+.banner a{
+
+    font-size: 25px;
+
+    text-decoration: underline;
+
+}
+
+
+
+.banner a:hover{
+
+    color:#fff;
+
+    filter: drop-shadow(0 0 5px #000) drop-shadow(0 0 5px #000) drop-shadow(0 0 5px #000) drop-shadow(0 0 5px #000);
+
+}
+
+
+
+/*PRESENTACION DE LA EMPRESA*/
+
+h2{
+
+    text-align: center;
+
+}
+
+
+
+hr{
+
+    width: 100%;
+
+}
+
+
+
+.nosotros{
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    margin-bottom: 50px;
+
+    margin-top: 50px;
+
+}
+
+
+
+.descripcion{
+
+    display: flex;
+
+    justify-content:center;
+
+    align-content: center;
+
+    width: 50%;
+
+    padding-right: 60px;
+
+}
+
+
+
+.descripcion p{
+
+    font-size: 20px;
+
+}
+
+
+
+.imagen{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    
+
+}
+
+
+
+.imagen img{
+
+    outline: 8px groove #555;
+
+    width: 320px;
+
+}
+
+
+
+/*SECCION DE */
+
+
+
+/*PIE DE PAGINA*/
+
+footer{
+
+    margin-top: auto;
+
+    width: 100%;
+
+    background: #777;
+
+    color: #fff;
+
+}
+
+
+
+.footer-container{
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+/*NOMBRE DE LA EMPRESA*/
+
+.nombre{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0;
+
+}
+
+
+
+.nombre img{
+
+    width: 100px;
+
+    filter: drop-shadow(0px 0px 2px #000) drop-shadow(0px 0px 2px #000);
+
+}
+
+
+
+/*SECCIONES DEL SITIO*/
+
+.mapa-sitio{
+
+    margin: 25px;
+
+    width: 25%;
+
+    text-align: center;
+
+}
+
+
+
+.mapa-sitio a{
+
+    display: flex;
+
+    flex-direction: column;
+
+    text-decoration: none;
+
+    color: #fff;
+
+}
+
+
+
+.mapa-sitio hr{
+
+    margin: 5px 0;
+
+}
+
+
+
+/*INFORMACION PARA CONTACTARNOS*/
+
+.datos-contacto {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    margin: 25px;
+
+}
+
+
+
+.datos-contacto hr{
+
+    margin: 5px 0;
+
+}
+
+
+
+.datos-contacto a{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-top: 10px;
+
+    text-align: start;
+
+    color: #000;
+
+    text-decoration: none;
+
+    font-size: 20px;;
+
+    width: 90px;
+
+    filter: drop-shadow(0 0 3px #fff);
+
+}
+
+
+
+.datos-contacto a img{
+
+
+
+    width: 30%;
+
+}
+
+
+
+/*DIRECCION DEL LOCAL*/
+
+.ubicacion{
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: center;
+
+    margin: 25px;
+
+}
+
+
+
+.ubicacion hr{
+
+    margin: 5px 0;
+
+}
+
+
+
+.ubicacion iframe{
+
+    width: 100%;
+
+}
+
+
+
+/*
+
+@media screen and (max-width: 400px){
+
+    .banner{
+
+        font-size: 12px;
+
+    }
+
+}*/
+
+
+
+@media screen and (max-width: 639px){
+
+    .descripcion{
+
+        padding: 0;
+
+    }
+
+
+
+    .descripcion p {
+
+        font-size: 16px;
+
+    }
+
+}
+
+
+
+@media screen and (max-width:1000px){
+
+
+
+    /*HEADER CABEZA DE PAGINA*/
+
+    .menu{
+
+        display: block;
+
+        padding: 1.1em;
+
+        position: absolute;
+
+        top: 1.5em;
+
+        right: 2.5em;
+
+    }
+
+    
+
+    .lineas-menu, .lineas-menu::before, .lineas-menu::after{
+
+        content: '';
+
+        display: block;
+
+        height: 5px;
+
+        width: 40px;
+
+        background: #555;
+
+        transition: all ease-in 0.4s;
+
+
+
+    }
+
+
+
+    .lineas-menu::before{
+
+        transform: translateY(-10px);
+
+    }
+
+
+
+    .lineas-menu::after{
+
+        transform: translateY(5px);
+
+    }
+
+
+
+    .open_menu .lineas-menu{
+
+       transform: rotate(45deg);
+
+       background: #000;
+
+       filter: drop-shadow(0px 0px 1px #fff) drop-shadow(0px 0px 2px #fff);
+
+    }
+
+
+
+    .open_menu .lineas-menu::before{
+
+        opacity: 0;
+
+    }
+
+
+
+    .open_menu .lineas-menu::after{
+
+        transform: translateY(-5px) rotate(-90deg);
+
+        background: #fff;
+
+        filter: drop-shadow(0px 0px 2px #fff) drop-shadow(0px 0px 2px #fff);
+
+    }
+
+
+
+
+
+    .link ul{
+
+        display: inline;
+
+        position: fixed;
+
+        margin: 0;
+
+        padding: 0;
+
+        width: 100%;
+
+        height: 100vh;
+
+        top: 0;
+
+        background: linear-gradient(180deg, rgba(0,0,0,0.7651435574229692) 0%, rgba(255,255,255,0.6250875350140056) 100%);
+
+    }
+
+    .link ul li{
+
+        margin: 0;
+
+        padding: 0;
+
+        position: relative;
+
+        text-align: center;
+
+        top: 10%;
+
+        width: 100%;
+
+        margin: 50px 0;
+
+    }
+
+
+
+    .link ul li a{
+
+        color: #fff;
+
+        font-size: 20px;
+
+        
+
+    }
+
+
+
+    
+
+    .menu_esconder{
+
+        clip-path: circle(0% at top right);
+
+        transition: clip-path ease-in-out 1s;
+
+        overflow: auto;
+               
+
+    }
+
+    .menu_abrir{
+
+        clip-path: circle(150% at top right);
+
+        
+
+    }
+
+}
+
+/*Cartel hosting de guerra en ucrania eliminar*/
+.disclaimer{
+    display: none;
+}

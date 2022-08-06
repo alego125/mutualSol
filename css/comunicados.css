@@ -1,0 +1,99 @@
+#comunicados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.com1,.com2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.com1 h3,.com2 h3{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.com1 b,.com2 b{
+    color: blue;    
+}
+
+.com1 b:hover,.com2 b:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.com1_container, .com2_container{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 25px;
+    z-index: 1000;
+    background-color: black;
+}
+
+.com1_container-info, .com2_container-info{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    top: 0;
+
+}
+
+.com1_conteiner-info p, .com2_conteiner-info p{
+    font-size: 100%;
+    color: #fff;
+}
+
+.com1_conteiner-info h3{
+    font-size: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.salirCom{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    right: 30px;
+    top: 20px;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+
+.salirCom:hover{
+    cursor: pointer;
+    background-color: #aaa;
+    color: #fff;
+}
+
+.ocultar{
+    display: none;
+}
+
+@media (max-width: 800px){
+    .com1_conteiner-info,.com2_conteiner-info{
+        display: flex;        
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+        overflow: auto;
+        height: 100vh;
+    }
+}
